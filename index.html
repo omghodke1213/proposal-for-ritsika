@@ -1,279 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Hey Ritsika ❤️</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Hey Ritsika ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Romantic Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
-    }
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI',sans-serif;
+}
 
-    body {
-      height: 100vh;
-      background: linear-gradient(135deg, #ff5f9e, #ff8fab, #d45079);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      overflow: hidden;
-    }
+body{
+  height:100vh;
+  background:linear-gradient(135deg,#ff5f9e,#ff8fab,#d45079);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+}
 
-    .card {
-      background: rgba(0, 0, 0, 0.25);
-      padding: 40px 30px;
-      border-radius: 28px;
-      text-align: center;
-      width: 90%;
-      max-width: 420px;
-      animation: fadeIn 1.4s ease;
-      box-shadow: 0 0 30px rgba(255,255,255,0.18);
-    }
+.card{
+  background:rgba(0,0,0,0.25);
+  padding:35px 25px;
+  border-radius:22px;
+  text-align:center;
+  width:90%;
+  max-width:420px;
+}
 
-    h1 {
-      font-size: 28px;
-      margin-bottom: 15px;
-    }
+h1{margin-bottom:15px;}
 
-    p {
-      font-size: 16px;
-      line-height: 1.7;
-      margin-bottom: 22px;
-    }
+p{
+  font-size:16px;
+  line-height:1.7;
+  margin-bottom:20px;
+}
 
-    button {
-      padding: 12px 30px;
-      border: none;
-      border-radius: 30px;
-      font-size: 16px;
-      cursor: pointer;
-      margin: 10px;
-      transition: 0.3s;
-    }
+button{
+  padding:12px 28px;
+  border:none;
+  border-radius:30px;
+  font-size:16px;
+  cursor:pointer;
+  margin:10px;
+}
 
-    .btn {
-      background: #ff4d6d;
-      color: white;
-    }
+.btn{background:#ff4d6d;color:white;}
+.yes{background:#2ecc71;}
+.no{background:#e74c3c;position:absolute;}
 
-    .btn:hover {
-      background: #ff1f4b;
-      transform: scale(1.07);
-    }
-
-    .yes {
-      background: #2ecc71;
-      font-size: 17px;
-    }
-
-    .no {
-      background: #e74c3c;
-      position: absolute;
-      font-size: 17px;
-    }
-
-    .proposal-text {
-      font-family: 'Playfair Display', serif;
-      font-size: 30px;
-      letter-spacing: 1px;
-      margin-bottom: 25px;
-      animation: pulse 1.8s infinite;
-    }
-
-    .love-text {
-      font-size: 21px;
-      font-weight: bold;
-      margin-top: 20px;
-      color: #ffd1dc;
-      animation: glow 2s infinite alternate;
-    }
-
-    /* PHOTO OVERLAY */
-    .photo-wrapper {
-      position: relative;
-      width: 260px;
-      margin: 25px auto;
-    }
-
-    .photo-wrapper img {
-      width: 100%;
-      border-radius: 28px;
-      opacity: 0.75;
-      filter: brightness(0.9);
-      box-shadow: 0 0 30px rgba(255,255,255,0.4);
-      animation: fadeInPhoto 1.8s ease forwards;
-    }
-
-    .photo-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      font-size: 18px;
-      font-weight: 600;
-      color: white;
-      padding: 10px 14px;
-      background: rgba(0, 0, 0, 0.35);
-      border-radius: 16px;
-      backdrop-filter: blur(4px);
-      text-shadow: 0 0 10px rgba(255,255,255,0.6);
-      animation: fadeInText 2.2s ease forwards;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.9); }
-      to { opacity: 1; transform: scale(1); }
-    }
-
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.06); }
-      100% { transform: scale(1); }
-    }
-
-    @keyframes glow {
-      from { text-shadow: 0 0 8px #ff9eb5; }
-      to { text-shadow: 0 0 16px #ffffff; }
-    }
-
-    @keyframes fadeInPhoto {
-      from { opacity: 0; transform: scale(0.9); }
-      to { opacity: 0.75; transform: scale(1); }
-    }
-
-    @keyframes fadeInText {
-      from { opacity: 0; transform: translate(-50%, -45%); }
-      to { opacity: 1; transform: translate(-50%, -50%); }
-    }
-
-    .hearts {
-      position: fixed;
-      top: -10px;
-      font-size: 20px;
-      animation: fall linear infinite;
-    }
-
-    @keyframes fall {
-      to {
-        transform: translateY(110vh);
-        opacity: 0;
-      }
-    }
-  </style>
+.proposal-text{
+  font-family:'Playfair Display',serif;
+  font-size:28px;
+}
+</style>
 </head>
 
 <body>
 
-  <!-- PAGE 1 -->
-  <div class="card" id="page1">
-    <h1>Hey Ritsika ❤️</h1>
-    <p>
-      तुझ्यासाठी मनापासून काहीतरी बनवलंय… ❤️<br>
-      हसून click करशील ना 😊
-    </p>
-    <button class="btn" onclick="nextPage()">Click Here 💌</button>
-  </div>
+<!-- PAGE 1 -->
+<div class="card" id="page1">
+<h1>Hey Ritsika ❤️</h1>
+<p>
+तुझ्यासाठी मनापासून काहीतरी बनवलंय… ❤️<br>
+हसून click करशील ना 😊
+</p>
+<button class="btn" onclick="p2()">Click Here 💌</button>
+</div>
 
-  <!-- PAGE 2 -->
-  <div class="card" id="page2" style="display:none;">
-    <h1>💖</h1>
-    <p>
-      तुझ्यासाठी फार जास्त काही नाही… ❤️<br>
-      पण थोडाफार तरी डोकं लावून,<br>
-      तुला खुश करण्यासाठी हा प्रयत्न केलाय 😊<br><br>
+<!-- PAGE 2 -->
+<div class="card" id="page2" style="display:none;">
+<h1>मनापासून 💖</h1>
+<p>
+तुझ्यासाठी फार जास्त काही नाही… ❤️<br>
+पण तुला खुश करण्यासाठी प्रयत्न केलाय 😊<br><br>
 
-      आवडेलच तुला,<br>
-      मला माहीत आहे 😌<br><br>
+आवडेलच तुला,<br>
+मला माहीत आहे 😌<br><br>
 
-      तुझ्यावर हे प्रेम फक्त 7 दिवसांचं नाही…<br>
-      तर 7 जन्मांपर्यंत असंच प्रेम करत राहीन 🥺❤️
-    </p>
-    <button class="btn" onclick="nextPage2()">पण एक प्रश्न आहे… 🥺</button>
-  </div>
+हे प्रेम फक्त 7 दिवसांचं नाही,<br>
+तर 7 जन्मांपर्यंतचं आहे 🥺❤️
+</p>
+<button class="btn" onclick="p3()">Ek Vicharuu..? 🥺</button>
+</div>
 
-  <!-- PAGE 3 -->
-  <div class="card" id="page3" style="display:none;">
-    <h1 class="proposal-text">
-      Will you be my Valentine? 💍❤️
-    </h1>
-    <button class="yes" onclick="yesClicked()">YES 💖</button>
-    <button class="no" id="noBtn">NO 😒</button>
-  </div>
+<!-- PAGE 3 -->
+<div class="card" id="page3" style="display:none;">
+<h1 class="proposal-text">
+Will you be my Valentine? 💍❤️
+</h1>
+<button class="yes" onclick="p4()">YES 💖</button>
+<button class="no" id="noBtn">NO 😒</button>
+</div>
 
-  <!-- PAGE 4 -->
-  <div class="card" id="page4" style="display:none;">
-    <h1>Yayyyy 💕</h1>
+<!-- PAGE 4 (SIMPLE FINAL) -->
+<div class="card" id="page4" style="display:none;">
+<h1>❤️</h1>
+<p>
+तू माझं कायमचं आहेस ❤️<br>
+आणि मी तुझाच 🥺<br><br>
 
-    <div class="photo-wrapper">
-      <img src="us.jpg" alt="Us Together">
-      <div class="photo-text">
-        तू माझं कायमचं आहेस ❤️<br>
-        आणि मी तुझाच 💫
-      </div>
-    </div>
+तू माझ्यासाठी फक्त व्यक्ती नाहीयस…<br>
+तू माझं सगळं काही आहेस 😌❤️<br><br>
 
-    <p>
-      तू माझ्यासाठी फक्त एक व्यक्ती नाहीयस… ❤️<br>
-      तू माझं सगळं काही आहेस 🥺<br><br>
+shembdeeee 😘
+</p>
 
-      माझ्या सोबत कायम हसत राहा 😌<br>
-      आणि मला थोडंसं सांभाळून घे…<br>
-      कारण मी पूर्णपणे तुझाच आहे 💖<br><br>
+<p style="font-size:20px;font-weight:bold;">
+I LOVE YOUUUU RP 💋❤️
+</p>
+</div>
 
-      shembdeeee 😘
-    </p>
+<script>
+function p2(){page1.style.display='none';page2.style.display='block';}
+function p3(){page2.style.display='none';page3.style.display='block';}
+function p4(){page3.style.display='none';page4.style.display='block';}
 
-    <p class="love-text">
-      I LOVE YOUUUU RP 💋❤️
-       umhaaaaa
-    </p>
-  </div>
-
-  <script>
-    function nextPage() {
-      page1.style.display = "none";
-      page2.style.display = "block";
-    }
-
-    function nextPage2() {
-      page2.style.display = "none";
-      page3.style.display = "block";
-    }
-
-    function yesClicked() {
-      page3.style.display = "none";
-      page4.style.display = "block";
-      startHearts();
-    }
-
-    const noBtn = document.getElementById("noBtn");
-    noBtn.addEventListener("mouseover", () => {
-      const x = Math.random() * (window.innerWidth - 120);
-      const y = Math.random() * (window.innerHeight - 60);
-      noBtn.style.left = x + "px";
-      noBtn.style.top = y + "px";
-    });
-
-    function startHearts() {
-      setInterval(() => {
-        const heart = document.createElement("div");
-        heart.className = "hearts";
-        heart.innerHTML = "❤️";
-        heart.style.left = Math.random() * 100 + "vw";
-        heart.style.animationDuration = (Math.random() * 3 + 2) + "s";
-        document.body.appendChild(heart);
-        setTimeout(() => heart.remove(), 5000);
-      }, 280);
-    }
-  </script>
+noBtn.onmouseover=()=>{
+  noBtn.style.left=Math.random()*200+'px';
+  noBtn.style.top=Math.random()*200+'px';
+}
+</script>
 
 </body>
 </html>
