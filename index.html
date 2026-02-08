@@ -1,10 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Hey Ritsika ❤️</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Romantic Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
   <style>
     * {
@@ -16,7 +18,7 @@
 
     body {
       height: 100vh;
-      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      background: linear-gradient(135deg, #ff5f9e, #ff8fab, #d45079);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -25,13 +27,14 @@
     }
 
     .card {
-      background: rgba(0,0,0,0.25);
-      padding: 40px;
-      border-radius: 20px;
+      background: rgba(0, 0, 0, 0.25);
+      padding: 40px 30px;
+      border-radius: 28px;
       text-align: center;
       width: 90%;
-      max-width: 400px;
-      animation: fadeIn 1.5s ease;
+      max-width: 420px;
+      animation: fadeIn 1.4s ease;
+      box-shadow: 0 0 30px rgba(255,255,255,0.18);
     }
 
     h1 {
@@ -41,12 +44,12 @@
 
     p {
       font-size: 16px;
+      line-height: 1.7;
       margin-bottom: 25px;
-      line-height: 1.6;
     }
 
     button {
-      padding: 12px 25px;
+      padding: 12px 30px;
       border: none;
       border-radius: 30px;
       font-size: 16px;
@@ -62,21 +65,50 @@
 
     .btn:hover {
       background: #ff1f4b;
-      transform: scale(1.05);
+      transform: scale(1.07);
     }
 
     .yes {
       background: #2ecc71;
+      font-size: 17px;
     }
 
     .no {
       background: #e74c3c;
       position: absolute;
+      font-size: 17px;
+    }
+
+    .proposal-text {
+      font-family: 'Playfair Display', serif;
+      font-size: 30px;
+      letter-spacing: 1px;
+      margin-bottom: 25px;
+      animation: pulse 1.8s infinite;
+    }
+
+    .love-text {
+      font-size: 21px;
+      font-weight: bold;
+      margin-top: 25px;
+      color: #ffd1dc;
+      animation: glow 2s infinite alternate;
     }
 
     @keyframes fadeIn {
       from { opacity: 0; transform: scale(0.9); }
       to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.06); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 8px #ff9eb5; }
+      to { text-shadow: 0 0 16px #ffffff; }
     }
 
     .hearts {
@@ -101,30 +133,34 @@
   <div class="card" id="page1">
     <h1>Hey Ritsika ❤️</h1>
     <p>
-     <p>
-  तुझ्यासाठी मनापासून काहीतरी बनवलंय… ❤️<br>
-  हसून click करशील ना 😊
-</p>
-<br>
-      Please click this with a smile 😊
+      तुझ्यासाठी मनापासून काहीतरी बनवलंय… ❤️<br>
+      हसून click करशील ना 😊
     </p>
     <button class="btn" onclick="nextPage()">Click Here 💌</button>
   </div>
 
   <!-- PAGE 2 -->
   <div class="card" id="page2" style="display:none;">
-    <h1>From My Heart 💖</h1>
+    <h1>मनापासून 💖</h1>
     <p>
-      I don’t promise perfection,<br>
-      but I promise honesty, care,<br>
-      and a lot of love for you.
+      तुझ्यासाठी फार जास्त काही नाही… ❤️<br>
+      पण थोडाफार तरी डोकं लावून,<br>
+      तुला खुश करण्यासाठी हा प्रयत्न केलाय 😊<br><br>
+
+      आवडेलच तुला,<br>
+      मला माहीत आहे 😌<br><br>
+
+      तुझ्यावर हे प्रेम फक्त 7 दिवसांचं नाही…<br>
+      तर 7 जन्मांपर्यंत असंच प्रेम करत राहीन 🥺❤️
     </p>
-    <button class="btn" onclick="nextPage2()">One Last Question… 🥺</button>
+    <button class="btn" onclick="nextPage2()">पण एक प्रश्न आहे… 🥺</button>
   </div>
 
   <!-- PAGE 3 -->
   <div class="card" id="page3" style="display:none;">
-    <h1>Will you be my girlfriend? 💍❤️</h1>
+    <h1 class="proposal-text">
+      Will you be my Valentine? 💍❤️
+    </h1>
     <button class="yes" onclick="yesClicked()">YES 💖</button>
     <button class="no" id="noBtn">NO 😒</button>
   </div>
@@ -133,33 +169,42 @@
   <div class="card" id="page4" style="display:none;">
     <h1>Yayyyy 💕</h1>
     <p>
-      You just made me the happiest person alive 🥹❤️<br>
-      I promise to choose you every single day.
+      तू माझ्यासाठी फक्त एक व्यक्ती नाहीयस… ❤️<br>
+      तू माझं सगळं काही आहेस 🥺<br><br>
+
+      माझ्या सोबत कायम हसत राहा 😌<br>
+      आणि मला थोडंसं सांभाळून घे…<br>
+      कारण मी पूर्णपणे तुझाच आहे 💖<br><br>
+
+      shembdeeee 😘
     </p>
-    <p>— Om ❤️</p>
+
+    <p class="love-text">
+      I LOVE YOUUUU RP 💋❤️
+    </p>
   </div>
 
   <script>
     function nextPage() {
-      document.getElementById("page1").style.display = "none";
-      document.getElementById("page2").style.display = "block";
+      page1.style.display = "none";
+      page2.style.display = "block";
     }
 
     function nextPage2() {
-      document.getElementById("page2").style.display = "none";
-      document.getElementById("page3").style.display = "block";
+      page2.style.display = "none";
+      page3.style.display = "block";
     }
 
     function yesClicked() {
-      document.getElementById("page3").style.display = "none";
-      document.getElementById("page4").style.display = "block";
+      page3.style.display = "none";
+      page4.style.display = "block";
       startHearts();
     }
 
     const noBtn = document.getElementById("noBtn");
     noBtn.addEventListener("mouseover", () => {
-      const x = Math.random() * (window.innerWidth - 100);
-      const y = Math.random() * (window.innerHeight - 50);
+      const x = Math.random() * (window.innerWidth - 120);
+      const y = Math.random() * (window.innerHeight - 60);
       noBtn.style.left = x + "px";
       noBtn.style.top = y + "px";
     });
@@ -172,9 +217,8 @@
         heart.style.left = Math.random() * 100 + "vw";
         heart.style.animationDuration = (Math.random() * 3 + 2) + "s";
         document.body.appendChild(heart);
-
         setTimeout(() => heart.remove(), 5000);
-      }, 300);
+      }, 280);
     }
   </script>
 
